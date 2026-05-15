@@ -139,6 +139,28 @@ of the cyber kill chain.
 - **Wazuh Rule:** Custom rule detecting ExecutionPolicy Bypass + DownloadString behavior
 - **Result:** ✅ Detected — remote script execution artifact identified
 
+**Custom Detection Rule (Rule ID: 100405):**
+
+![PowerShell Abuse](screenshots/powershell-abuse-custom-rule.png)
+
+**Sysmon Event ID 1 — Process Create (PowerShell with IEX DownloadString):**
+
+![PowerShell Abuse](screenshots/powershell-abuse-event-id1.png)
+
+**Windows Event ID 4688 — Process Creation (ExecutionPolicy Bypass Command Line):**
+
+![PowerShell Abuse](screenshots/powershell-abuse-event-id3.png)
+
+**Sysmon Event ID 11 — File Created (PSScriptPolicyTest artifact):**
+
+![PowerShell Abuse](screenshots/powershell-abuse-event-id2.png)
+
+**Wazuh SIEM Detection:**
+
+![PowerShell Abuse](screenshots/powershell-abuse-custom-wazuh-rule.png)
+![PowerShell Abuse](screenshots/powershell-abuse-custom-wazuh-rule1.png)
+![PowerShell Abuse](screenshots/powershell-abuse-custom-wazuh-rule2.png)
+
 ---
 
 ## 🛠️ Tools & Technologies
