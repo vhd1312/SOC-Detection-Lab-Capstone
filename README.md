@@ -76,7 +76,13 @@ of the cyber kill chain.
 - **Wazuh Rule:** Custom correlation rule identifying brute force pattern threshold
 - **Result:** ✅ Detected — brute force alert triggered with source IP attribution
 
-![SMB Brute Force Detection](screenshots/smb-bruteforce-detection.png)
+**Firewall Logs:**
+
+![SMB Brute Force Detection](screenshots/smb-brute-force-firewall-log.png)
+
+**Windows Event ID 4625 — Failed Logon Attempts:**
+
+![SMB Brute Force Detection](screenshots/smb-brute-force_event-4625.png)
 
 ### 3. Privilege Escalation — runas.exe (T1548)
 - **Attack:** Native Windows runas.exe spawning elevated command shell
