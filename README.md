@@ -99,6 +99,40 @@ of the cyber kill chain.
 - **Wazuh Rule:** Custom rule detecting suspicious process relationships and elevated execution
 - **Result:** ✅ Detected — runas.exe spawning cmd.exe flagged as privilege escalation
 
+**Custom Detection Rule (Rule ID: 100302):**
+
+![Privilege Escalation](screenshots/pe-customrule.png)
+
+**Windows Event ID 4624 — Logon Session (labuser):**
+
+![Privilege Escalation](screenshots/pe-labuser-cmd.png)
+
+**Windows Event ID 4688 — Process Creation (labuser → cmd):**
+
+![Privilege Escalation](screenshots/pe-labuser-cmd1.png)
+
+**Wazuh SIEM Detection (labuser context):**
+
+![Privilege Escalation](screenshots/pe-labuser-cmd_wazuhcustomrule.png)
+![Privilege Escalation](screenshots/pe-labuser-cmd_wazuhcustomrule1.png)
+
+**Windows Event ID 4688 — whoami (Post-Escalation Recon):**
+
+![Privilege Escalation](screenshots/pe-labuser-whoami-cmd.png)
+
+**Windows Event ID 4624 — Elevated Logon (LAB\Administrator):**
+
+![Privilege Escalation](screenshots/pe-runas-admin-4624.png)
+
+**Windows Event ID 4688 — Process Creation (Administrator → cmd):**
+
+![Privilege Escalation](screenshots/pe-runas-admin-4688.png)
+
+**Wazuh SIEM Detection (Administrator context):**
+
+![Privilege Escalation](screenshots/pe-runas-admin-cmd_wazuhcustom.png)
+![Privilege Escalation](screenshots/pe-runas-admin-cmd_wazuhcustom1.png)
+
 ### 4. Execution — Obfuscated PowerShell (T1059.001)
 - **Attack:** PowerShell with -ExecutionPolicy Bypass and IEX DownloadString flags
 - **Detection:** Sysmon Event ID 1 captured full command line including obfuscated flags
