@@ -55,11 +55,28 @@ of the cyber kill chain.
 - **Wazuh Rule:** Custom rule correlating Suricata alerts with source/destination IP metadata
 - **Result:** ✅ Detected — attacker IP attributed, scanning behavior identified
 
+**Suricata Alert Logs:**
+
+![Suricata Nmap Alerts](screenshots/suricata-nmap-alert-log.png)
+![Suricata Nmap Alerts](screenshots/suricata-nmap-alert-log1.png)
+
+**Wazuh SIEM Detection:**
+
+![Wazuh Nmap Detection](screenshots/nmap-wazuh-customdetection.png)
+![Wazuh Nmap Detection](screenshots/nmap-wazuh-customdetection1.png)
+
+**Custom Detection Rule (Rule ID: 100304):**
+
+![Wazuh Nmap Detection Rule](screenshots/nmap-wazuh-customrule.png)
+
+
 ### 2. Credential Access — SMB Brute Force (T1110.001)
 - **Attack:** SMB brute force from Kali Linux targeting Windows host
 - **Detection:** Multiple Windows Event ID 4625 (failed logon) from single source IP
 - **Wazuh Rule:** Custom correlation rule identifying brute force pattern threshold
 - **Result:** ✅ Detected — brute force alert triggered with source IP attribution
+
+![SMB Brute Force Detection](screenshots/smb-bruteforce-detection.png)
 
 ### 3. Privilege Escalation — runas.exe (T1548)
 - **Attack:** Native Windows runas.exe spawning elevated command shell
