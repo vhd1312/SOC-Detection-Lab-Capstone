@@ -84,6 +84,15 @@ of the cyber kill chain.
 
 ![SMB Brute Force Detection](screenshots/smb-brute-force_event-4625.png)
 
+**Wazuh SIEM Detection:**
+
+![SMB Brute Force Detection](screenshots/smb-brute-force-wazuhcustomdetection.png)
+![SMB Brute Force Detection](screenshots/smb-brute-force-wazuhcustomdetection1.png)
+
+**Custom Detection Rule (Rule ID: 100300):**
+
+![SMB Brute Force Detection](screenshots/smb-brute-force-wazuhcustomrule.png)
+
 ### 3. Privilege Escalation — runas.exe (T1548)
 - **Attack:** Native Windows runas.exe spawning elevated command shell
 - **Detection:** Sysmon Event ID 1 capturing parent-child process chain
