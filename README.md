@@ -1,4 +1,12 @@
 # SOC-Detection-Lab-Capstone
+![Wazuh](https://img.shields.io/badge/Wazuh-SIEM-blue?style=flat-square)
+![Suricata](https://img.shields.io/badge/Suricata-IDS-orange?style=flat-square)
+![pfSense](https://img.shields.io/badge/pfSense-Firewall-darkblue?style=flat-square)
+![Sysmon](https://img.shields.io/badge/Sysmon-Endpoint%20Logging-purple?style=flat-square)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-black?style=flat-square)
+![Kali Linux](https://img.shields.io/badge/Kali-Linux-557C94?style=flat-square)
+![VMware](https://img.shields.io/badge/VMware-Hypervisor-607078?style=flat-square)
+
 End-to-end SOC detection lab simulating real-world adversary behavior across 4 MITRE ATT&amp;CK techniques
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
